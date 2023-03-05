@@ -53,6 +53,8 @@ TODO : add real case about account locked and sms.
 
 ### 6. Vulnerable and Outdated Components
 
+TODO : add vulnerable and outdated component and exploit.
+
 ### 7. Identification and Authentication Failures
 
 ### 8. Software and Data Integrity Failures 
