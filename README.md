@@ -18,6 +18,7 @@ This happens when a user input is interpreted by the server.
 
 - SQL Injection
 - Command Injection
+  - TODO : add reverse shell
 
 #### OS Command Injection
 
@@ -39,4 +40,4 @@ This happens when a server-side code like PHP make a call host machine.
 
 ## TODO :
 
-- Integrate 403 to 404 best practice
+- Add 403 to 404 best practice
