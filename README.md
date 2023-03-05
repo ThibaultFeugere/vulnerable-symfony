@@ -31,7 +31,7 @@ Patch :
 - Define password policy (with [constraints](https://symfony.com/doc/current/reference/constraints.html))
 - Check if password has been compromised ([NotCompromisedPassword](https://symfony.com/doc/current/reference/constraints/NotCompromisedPassword.html))
 
-### 2. Cryptographic failure
+### 2. Cryptographic failure / Sensitive data exposure
 
 ### 3. Injections 
 
@@ -64,3 +64,4 @@ TODO : add real case about account locked and sms.
 ## TODO :
 
 - Add 403 to 404 best practice
+- Add "why you should use TLS in dev environment"
