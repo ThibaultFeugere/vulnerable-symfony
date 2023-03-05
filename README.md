@@ -10,6 +10,18 @@ OWASP organization update regularly most critical security risks to web applicat
 
 ### 1. Broken Access Control
 
+Broken access control or broken authentication is about core component of applications. Their goal is to verify your identity, very often in order to grant access.
+
+#### Brute force
+
+TODO : add flaw in incoming symfony project.
+
+Patch : 
+
+- Captcha (warning ⚠ : many captchas aren't integrated correctly. If they are, [they can still be bypassed](https://www.youtube.com/watch?app=desktop&v=1CeUu8j7xsQ&ab_channel=Underscore_))
+- Rate limiter (defence in depth)
+- Two-factor authentication ([also block brute force](https://symfony.com/bundles/SchebTwoFactorBundle/6.x/brute_force_protection.html#2-block-authentication)) 
+
 ### 2. Cryptographic failure
 
 ### 3. Injections 
