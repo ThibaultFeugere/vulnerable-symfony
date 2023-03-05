@@ -4,6 +4,10 @@ Vulnerable Symfony aims to make everyone aware of common OWASP Top 10 risks and 
 
 ## Top 10 OWASP
 
+OWASP organization update regularly most critical security risks to web applications.
+
+![image](https://user-images.githubusercontent.com/32579584/222953149-f45f4937-b01b-4902-be77-a13deb4c0380.png)
+
 ### 1. Broken Access Control
 
 ### 2. Cryptographic failure
@@ -32,3 +36,7 @@ This happens when a server-side code like PHP make a call host machine.
 ### 9. Security Logging and Monitoring Failures
 
 ### 10. Server-Side Request Forgery
+
+## TODO :
+
+- Integrate 403 to 404 best practice
