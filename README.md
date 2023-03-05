@@ -17,10 +17,19 @@ Broken access control or broken authentication is about core component of applic
 TODO : add flaw in incoming symfony project.
 
 Patch : 
-
 - Captcha (warning ⚠ : many captchas aren't integrated correctly. If they are, [they can still be bypassed](https://www.youtube.com/watch?app=desktop&v=1CeUu8j7xsQ&ab_channel=Underscore_))
 - Rate limiter (defence in depth)
-- Two-factor authentication ([also block brute force](https://symfony.com/bundles/SchebTwoFactorBundle/6.x/brute_force_protection.html#2-block-authentication)) 
+- Two-factor authentication ([also block brute force](https://symfony.com/bundles/SchebTwoFactorBundle/6.x/brute_force_protection.html#2-block-authentication))
+- Notify the victim 
+- Setup trusted model
+
+#### Weak credentials
+
+This allows attackers to login without brute force or even dictionary.
+
+Patch : 
+- Define password policy (with [constraints](https://symfony.com/doc/current/reference/constraints.html))
+- Check if password has been compromised ([NotCompromisedPassword](https://symfony.com/doc/current/reference/constraints/NotCompromisedPassword.html))
 
 ### 2. Cryptographic failure
 
