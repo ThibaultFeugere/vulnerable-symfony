@@ -56,6 +56,11 @@ TODO : add real case about account locked and sms.
 
 ### 5. Security misconfiguration
 
+- Default passwords
+- Too much permissions ([Principle of Least Privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege))
+- Overly detailed error messages
+- Reveal too much details
+
 ### 6. Vulnerable and Outdated Components
 
 TODO : add vulnerable and outdated component and exploit.
