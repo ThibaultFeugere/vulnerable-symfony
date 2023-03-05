@@ -33,6 +33,11 @@ Patch :
 
 ### 2. Cryptographic failure / Sensitive data exposure
 
+TODO : 
+- Enable TLS v1.1
+- Known hash
+- Symfony Password handler with ["auto hasher"](https://symfony.com/doc/current/security/passwords.html#the-auto-hasher)
+
 ### 3. Injections 
 
 This happens when a user input is interpreted by the server.
@@ -67,3 +72,4 @@ TODO : add vulnerable and outdated component and exploit.
 
 - Add 403 to 404 best practice
 - Add "why you should use TLS in dev environment"
+- (not urgent) Add XML attacks 
