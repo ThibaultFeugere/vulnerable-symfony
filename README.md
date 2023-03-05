@@ -18,13 +18,15 @@ This happens when a user input is interpreted by the server.
 
 - SQL Injection
 - Command Injection
-  - TODO : add reverse shell
 
 #### OS Command Injection
 
 This happens when a server-side code like PHP make a call host machine.
+TODO : add reverse shell
 
 ### 4. Insecure design
+
+TODO : add real case about account locked and sms.
 
 ### 5. Security misconfiguration
 
