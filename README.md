@@ -59,9 +59,11 @@ This happens when a user input is interpreted by the server.
 
 Make sure to use Doctrine ORM and check if you are using a [Doctrine SQLi safe API function](https://www.doctrine-project.org/projects/doctrine-dbal/en/current/reference/security.html). 
 
+You shouldn't use concatenation and go for prepared statements to execute your queries.
+
 #### OS Command Injection
 
-This happens when a server-side code like PHP make a call host machine.
+This happens when a server-side code like PHP make a call to host machine.
 
 TODO : add reverse shell
 
@@ -80,6 +82,8 @@ TODO : add real case about account locked and sms.
 - Reveal too much details
 
 ### 6. Vulnerable and Outdated Components
+
+Looks easy but many projects are behind schedule and the longer you wait the harder it is to upgrade.
 
 TODO : add vulnerable and outdated component and exploit.
 
