@@ -1,6 +1,14 @@
 # vulnerable-symfony
 
-Vulnerable Symfony aims to make everyone aware of common OWASP Top 10 risks and other common issues.
+Vulnerable Symfony aims to make everyone aware of common OWASP Top 10 risks and other common issues that we encounter in business.
+
+Symfony projects are relatively secure if : 
+
+- you are up-to-date
+- you don't have legacy code, or you are at least aware and maintain it
+- you often test your product
+
+Nota bene : this is why DevSecOps philosophy can be usefull. It provides support from the design of a feature to delivery.
 
 ## Top 10 OWASP
 
@@ -44,6 +52,7 @@ This happens when a user input is interpreted by the server.
 
 - SQL Injection
 - Command Injection
+- ...
 
 #### OS Command Injection
 
@@ -78,3 +87,4 @@ TODO : add vulnerable and outdated component and exploit.
 - Add 403 to 404 best practice
 - Add "why you should use TLS in dev environment"
 - (not urgent) Add XML attacks 
+- file upload on Symfony ?
