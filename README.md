@@ -38,7 +38,7 @@ This allows attackers to login without brute force or even dictionary.
 Patch : 
 - Define password policy (with [constraints](https://symfony.com/doc/current/reference/constraints.html))
   - Define [Length Constraint](https://symfony.com/doc/current/reference/constraints/Length.html)
-  - Define [NotIdenticalTo](https://symfony.com/doc/current/reference/constraints/NotIdenticalTo.html)
+  - Define [NotIdenticalTo Constraint](https://symfony.com/doc/current/reference/constraints/NotIdenticalTo.html)
 - Check if password has been compromised ([NotCompromisedPassword](https://symfony.com/doc/current/reference/constraints/NotCompromisedPassword.html))
 
 ### 2. Cryptographic failure / Sensitive data exposure
@@ -48,7 +48,6 @@ Patch :
 You should encrypt all requests with TLS (v1.2 and v1.3) in order to avoid many attacks or data leak due to a [Man In The Middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) for example. Even in dev mode !
 
 TODO : 
-- Enable TLS v1.1
 - Known hash
 - Symfony Password handler with ["auto hasher"](https://symfony.com/doc/current/security/passwords.html#the-auto-hasher)
 
@@ -56,9 +55,9 @@ TODO :
 
 This happens when a user input is interpreted by the server.
 
-- SQL Injection
-- Command Injection
-- ...
+#### SQL Injection
+
+Make sure to use Doctrine ORM and check if you are using a [Doctrine SQLi safe API function](https://www.doctrine-project.org/projects/doctrine-dbal/en/current/reference/security.html). 
 
 #### OS Command Injection
 
