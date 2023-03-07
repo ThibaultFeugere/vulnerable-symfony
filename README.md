@@ -37,9 +37,15 @@ This allows attackers to login without brute force or even dictionary.
 
 Patch : 
 - Define password policy (with [constraints](https://symfony.com/doc/current/reference/constraints.html))
+  - Define [Length Constraint](https://symfony.com/doc/current/reference/constraints/Length.html)
+  - Define [NotIdenticalTo](https://symfony.com/doc/current/reference/constraints/NotIdenticalTo.html)
 - Check if password has been compromised ([NotCompromisedPassword](https://symfony.com/doc/current/reference/constraints/NotCompromisedPassword.html))
 
 ### 2. Cryptographic failure / Sensitive data exposure
+
+#### Encrypt everything
+
+You should encrypt all requests with TLS (v1.2 and v1.3) in order to avoid many attacks or data leak due to a [Man In The Middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) for example. Even in dev mode !
 
 TODO : 
 - Enable TLS v1.1
@@ -57,7 +63,11 @@ This happens when a user input is interpreted by the server.
 #### OS Command Injection
 
 This happens when a server-side code like PHP make a call host machine.
+
 TODO : add reverse shell
+
+You should avoid using PHP functions such as `exec()` or `system()`.
+If you really need to exec commands on the server, prefer [The Process Component](https://symfony.com/doc/current/components/process.html)
 
 ### 4. Insecure design
 
