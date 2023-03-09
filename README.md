@@ -47,8 +47,13 @@ Patch :
 
 You should encrypt all requests with TLS (v1.2 and v1.3) in order to avoid many attacks or data leak due to a [Man In The Middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) for example. Even in dev mode !
 
+#### Hash passwords
+
+You shouldn't store plain text passwords in your database, but rather in hash passwords. 
+Make sure to add salt to your hash system in order to protect yourself from rainbow table attack.
+
 TODO : 
-- Known hash
+- Known hash / rainbow 
 - Symfony Password handler with ["auto hasher"](https://symfony.com/doc/current/security/passwords.html#the-auto-hasher)
 
 ### 3. Injections 
